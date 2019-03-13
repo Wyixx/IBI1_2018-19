@@ -16,11 +16,11 @@ while n!=0:
     if n-2**x<0:
         x=x-1#select a smaller power
         continue
-    if n-2**x>0:
+    elif n-2**x>0:
         a=a+str(x)+"+2**"
         n=n-2**x
         continue
-    if n-2**x==0:
+    else:
         a=a+str(x)
         break
 print(a)
