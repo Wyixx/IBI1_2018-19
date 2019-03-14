@@ -15,11 +15,9 @@ a=str(n)+"is 2**"
 while n!=0:
     if n-2**x<0:
         x=x-1#select a smaller power
-        continue
     elif n-2**x>0:
         a=a+str(x)+"+2**"
         n=n-2**x
-        continue
     else:
         a=a+str(x)
         break
