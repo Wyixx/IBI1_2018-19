@@ -5,10 +5,10 @@ Created on Wed Mar 20 10:16:22 2019
 @author: Wyxx
 """
 
-sequence=input()
-sequence=sequence.split(" ")
+DNA=input()
+DNA=DNA.split(" ")
 myDict={}
-for word in sequence:
+for word in DNA:
     if word in myDict:
         myDict[word]+=1
     else:
