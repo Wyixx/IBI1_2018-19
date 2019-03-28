@@ -5,7 +5,7 @@ Created on Wed Mar 20 11:00:46 2019
 @author: Wyxx
 """
 
-s=input()
+s=input() #input a string
 s=s[ : :-1]
 s=s.split(" ")
 L=sorted(s)
