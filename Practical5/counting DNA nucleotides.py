@@ -5,7 +5,7 @@ Created on Wed Mar 20 10:16:22 2019
 @author: Wyxx
 """
 
-DNA=input()#input a sequence of DNA
+DNA=input('please enter a DNA sequence:')#input a sequence of DNA
 myDict={}
 for word in DNA:
     if word in myDict:#count the number of ATCG (a specific kind of nucleotide)

@@ -4,7 +4,7 @@ Created on Thu Mar 14 00:27:00 2019
 
 @author: Wyxx
 """
-#To judge if it is divisible by 7
+#judge if it is divisible by 7
 b=123123
 y=b%7
 print(y)
@@ -26,14 +26,39 @@ else:
 
 x=True
 y=False
-if (x and not y)or(y and not x):
-    print("w is true")
+z=(x and not y)or(y and not x)
+w=(x!=y)
+if z==w:
+    print('z and w are the same')
 else:
-    print("w is false")
-
+    print('z and w are not the same')
+    
 x=True
-y=False
-if x!=y:
-    print("z is true")
+y=True
+z=(x and not y)or(y and not x)
+w=(x!=y)
+if z==w:
+    print('z and w are the same')
 else:
-    print("z is false")
+    print('z and w are not the same')
+
+x=False
+y=True
+z=(x and not y)or(y and not x)
+w=(x!=y)
+if z==w:
+    print('z and w are the same')
+else:
+    print('z and w are not the same')
+
+x=False
+y=False
+z=(x and not y)or(y and not x)
+w=(x!=y)
+if z==w:
+    print('z and w are the same')
+else:
+    print('z and w are not the same')
+
+
+

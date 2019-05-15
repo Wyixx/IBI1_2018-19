@@ -10,7 +10,7 @@ x=13
 #input the number n
 n=int(input())
 #define a as the output
-a=str(n)+"is 2**"
+a=str(n)+" is 2**"
 #select powers from the biggest to the smallest
 while n!=0:
     if n-2**x<0:

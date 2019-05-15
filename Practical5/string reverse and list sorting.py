@@ -5,9 +5,10 @@ Created on Wed Mar 20 11:00:46 2019
 @author: Wyxx
 """
 
-s=input() #input a string
+s=input('please enter a string of words:\n')
 s=s[ : :-1]
-s=s.split(" ")
+s=s.split(" ") #get the words from the string, split by blank spaces
+#sort & reverse
 L=sorted(s)
 L.reverse()
 print(L)

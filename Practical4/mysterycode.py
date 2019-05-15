@@ -6,7 +6,7 @@ Created on Thu Mar 14 00:27:45 2019
 """
 
 # What does this piece of code do?
-# Answer: select prime numbers
+# Answer: select a prime number between 1 to 100
 
 # Import libraries
 # randint allows drawing a random number, 
