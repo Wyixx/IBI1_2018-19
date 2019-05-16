@@ -1,5 +1,6 @@
-Most things went well.
+Most things went well. It is quite interesting.
 I successfully created files and edited them through Gitkraken.
 And I made my own website.
-But while operating, I was confused about branching and merging.
-It's intersting.
+
+However,during the pratical, I wondered how to edit the git page <username>.git.io.
+Branching and merging are a bit confusing.
