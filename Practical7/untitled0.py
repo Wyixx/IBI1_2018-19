@@ -4,26 +4,80 @@ Created on Wed Apr  3 09:53:03 2019
 
 @author: Wyxx
 """
+import re
+from fractions import Fraction
+#The input numbers must be interger between 1 and 23
+re_numtest = re.compile(r'(^[1-9]$)|(^1[0-9]$)|(^2[0-3]$)')
+i = 1
+while i:
+    i = 0
+    data = input('Please input numbers to computer 24:(use \',\' to divide them)\n')
+    numList = data.split(',')
+    for char in numList:
+        if re_numtest.match(char): 
+            continue
+        else: 
+            print('The input number must be intergers from 1 to 23')
+            i = 1
+            break
 
-number_list=input()
-number_list=list(number_list)
-number_list.sort()#sort numbers input from the smallest to the biggest
-print(number_list)
-operator_list=['+','-','*','/']
-def insertParentheses(number_list,operator_list):
-    count=0
-    expression_list=[]
-    for each_number_list in number_list:
-        for each_operator_list in number_list:
-            expression1=str(each_number_list[0])+each_operator_list[0]+str(each_number_list[1])+each_operator_list[1]+str(each_number_list[2])+each_operator_list[2]+str(each_number_list[3])
-            try:
-                result=eval(expression1)
-            except:
-                result=0
-            if result==24:
-                expression_list.append(expression1+'='+str(result)
-                count+=1
-            else:
-                expression2
+num = list(map(int,numList))  
+#recursion times
+count = 0 
+
+#n is len(num) 
+def dfs(n):
+    global count
+    count = count +1
+    
+    if n == 1:
+        if(float(num[0])==24):
+            return 1
+        else:
+            return 0
+    #select two different numbers
+    for i in range(0,n):
+        for j in range(i+1,n):
+            a = num[i]
+            b = num[j]
+            num[j] = num[n-1]
+            
+            num[i] = a+b
+            if(dfs(n-1)):
+                return 1
+            
+            num[i] = a-b
+            if(dfs(n-1)):
+                return 1  
+            
+            num[i] = b-a
+            if(dfs(n-1)): 
+                return 1 
+            
+            num[i] = a*b
+            if(dfs(n-1)): 
+                return 1  
+            
+            if a:
+                #floats are not precise
+                num[i] = Fraction(b,a)
+                if(dfs(n-1)): 
+                    return 1 
+                
+            if b:
+                num[i] = Fraction(a,b)
+                if(dfs(n-1)): 
+                    return 1 
+            #Backtracking  
+            num[i] = a
+            num[j] = b
+    return 0 
+
+if (dfs(len(num))): 
+    print('Yes')
+else: 
+    print('No')
+print('Recursion times:',count)
+
                 
 
