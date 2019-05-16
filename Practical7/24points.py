@@ -24,17 +24,16 @@ while i:
 num = list(map(int,numList))  
 #recursion times
 count = 0 
-
 #n is len(num) 
 def dfs(n):
     global count
     count = count +1
-    
+#the mean idea is to reduce the numbers one by one
     if n == 1:
-        if(float(num[0])==24):
+        if(float(num[0])==24):#1 means the 24 has been calculated successfully
             return 1
         else:
-            return 0
+            return 0#0 means no 24 is calculated
     #select two different numbers
     for i in range(0,n):
         for j in range(i+1,n):
