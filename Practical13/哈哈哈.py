@@ -56,7 +56,13 @@ def xml_to_cps():
     cpsFile = open("predator-prey.cps","w",encoding='utf-8')
     cpsTree.writexml(cpsFile)
     cpsFile.close()
-    
 y=xml_to_cps()
-        
+
+
+
+
+xfile=open(r'modelResults.csv')
+reader=xfile.read()
+print(reader)
+
         

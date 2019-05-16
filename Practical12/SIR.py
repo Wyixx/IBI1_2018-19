@@ -23,13 +23,13 @@ s=[]
 #use 0 and 1 to represent two situations in each random choice
 count=0
 while count<1000:
-    inf=np.random.choice(range(2),S,p=[1-beta*I/N,beta*I/N])
-    infected=sum(inf)
+    inf=np.random.choice(range(2),S,p=[1-beta*I/N,beta*I/N]) # 0 for susceptible, 1 for infected
+    infected=sum(inf) #as '1' is for infected, 'sum' can get the number of people that get infected this time
     I=I+infected
     S=S-infected
     s.append(S)
     
-    rec=np.random.choice(range(2),I,p=[1-gamma,gamma])
+    rec=np.random.choice(range(2),I,p=[1-gamma,gamma])# 0 for infected, 1 for recovered
     recovered=sum(rec)
     I=I-recovered
     R=R+recovered
