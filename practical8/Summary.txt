@@ -1,0 +1,19 @@
+The human-mouse score is 1091 
+The human-mouse normalised Blosum score is 4.914414 
+The human-mouse edit distance is 23 
+The human-mouse percentage identity is about 89.63963963963964%
+
+The human-random score is -250 
+The human-random normalised Blosum score is -1.126126 
+The human-random edit distance is 210 
+The human-random percentage identity is about 5.405405405405405%
+
+The mouse-random score is -250 
+The mouse-random normalised Blosum score is -1.126126 
+The mouse-random edit distance is 209 
+The mouse-random percentage identity is about 5.8558558558558556%
+
+
+We can use the knowledge in this practical to compair 2 sequences. And the difference can be reflected quantitatively, such as the score calculated by referring to Blosum 62. It is quite interesting and meaningful.
+However, I am still wondering the situation where the lengths of two sequences are different.
+Additionally, how can we complete multiple sequence comparisons?
