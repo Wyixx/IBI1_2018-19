@@ -40,7 +40,7 @@ print('the number of susceptible people is',S)
 print('the number of infected people is',I)
 print('the number of recovered people is',R)
 
-#plot the figure
+###plot the figure
 plt.figure(figsize=(6,4),dpi=150)
 plt.plot(s,color='blue')
 plt.plot(i,color='orange')

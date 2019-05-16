@@ -7,6 +7,8 @@ Created on Wed May  8 11:31:25 2019
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import cm
+
 
 plt.figure(figsize=(6,4),dpi=150)
 V=0 #the vaccinated
@@ -47,7 +49,8 @@ while V<10000:
     plt.ylabel('number of people')
     plt.title('SIR model with different vaccination rates')
     V=V+1000
-plt.plot(0,label='100.00%') #100% is an exception because I=0 instead of 1
+    
+plt.plot(0,label='100.00%',color=cm. viridis (30)) #100% is an exception because I=0 instead of 1
 plt.legend(loc='upper right')
 plt.savefig('C:/Users/Wyxx/Documents/git/IBI1_2018-19/Practical12/SIR_vaccination model.png',type='png')
     

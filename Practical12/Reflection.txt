@@ -1,0 +1,6 @@
+With the clear instructions, this practical is not very hard. Infection is the problem we focused on.
+I learned probabilistic model. We can use random.choice() to select elements randomly and replace events with numbers such as 0,1,2. When 0 represented the susceptible and 1 represented the infected, sum() can be applied to calculated the number of infected people. Additionally, I am more familiar with ploting.
+I think this practical is very meaningful, because probabilistic model can be used to simulate and predict real problems.
+Anyway, I enjoy the class.
+
+Later, I will try to spread two diseases with different probabilities at the same time.
