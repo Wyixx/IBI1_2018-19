@@ -8,7 +8,7 @@ Created on Wed Mar 13 23:58:03 2019
 #judge whether x is even or odd using x%2
 #if x is even, dividing by 2
 #if x is odd, multipying 3 and adding 1
-x=int(input("Enter an integer:"))
+x=int(input("Enter an integer: "))
 while x!=1:
     if x%2==0:
         x=x/2
