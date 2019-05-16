@@ -23,7 +23,10 @@ elif a>e:
 else:
     print("a<e")
 
-
+#define z as (x and not y)or(y and not x)
+#define w as (x!=y)
+#verify that w and z are always the same, no matter the values of x and y
+#so it is important to make sure every situation of x and y is covered
 x=True
 y=False
 z=(x and not y)or(y and not x)
