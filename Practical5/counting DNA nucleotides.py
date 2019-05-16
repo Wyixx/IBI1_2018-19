@@ -12,8 +12,10 @@ for word in DNA:
         myDict[word]+=1
     else:
         myDict[word]=1 #There is only one such nucleotide
-print(myDict)
-import matplotlib.pyplot as plt#plot the proportions of different nucleotides
+print(myDict)#print out the numbers of every kind of nucleotides
+
+#plot the proportions of different nucleotides
+import matplotlib.pyplot as plt
 labels='A','T','C','G'
 sizes=tuple(myDict.values())
 explode=(0,0.1,0,0)
