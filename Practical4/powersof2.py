@@ -8,7 +8,7 @@ Created on Thu Mar 14 00:25:59 2019
 #define x as the power, count down from 13
 x=13
 #input the number n
-n=int(input())
+n=int(input('please enter the number: '))
 #define a as the output
 a=str(n)+" is 2**"
 #select powers from the biggest to the smallest
