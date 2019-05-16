@@ -12,11 +12,11 @@ from email.header import Header
 #read email body
 xfile1=open('body.txt','r')
 body=xfile1.read()
-print(body)
 xfile1.close
 
-#test the address
+#######test the address########
 xfile=open('address_information.csv','r')
+#creat lists to contain the information of correct email addresses
 namelist=[]
 addresslist=[]
 subjectlist=[]
@@ -26,7 +26,7 @@ for line in xfile:
         continue
     if re.match(r'(\S+@\S+com)',mylist[1]):
         #add the information of the correct address into the list
-        namelist += [mylist[0]]
+        namelist += [mylist[0]]#the first(0) element is name, the second(1) is address, the third(2) is subject
         addresslist += [mylist[1]]
         subjectlist += [mylist[2]]
         print(mylist[1],'correct address')
@@ -34,7 +34,7 @@ for line in xfile:
         print(mylist[1],'wrong address')
 xfile.close
 
-#send emails
+#############send emails########
 from_addr=input('please enter the sender address:')
 password=input('password:')
 
