@@ -1,0 +1,13 @@
+I improved my files in practical 3-5 according to the feedback.
+
+In week 3:
+The information on my personal website has been updated instead of the standard template.
+
+In week 4:
+1. In file variables.py, I added X and Y in all circumstances and judged the relationship between the W and Z
+2. In file mystery code, I added a limit to the range of primes.
+3. In file the powers of 2, only a space before 'is' in the output was added.
+
+In week 5:
+1. In file the nucleotide counting, a prompt 'please enter a DNA sequence' was added  to guide the user
+2. In file reverts words and sorts them, I added a user prompt
