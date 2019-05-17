@@ -2,3 +2,4 @@
 The mean idea is to reduce the numbers one by one. Select two numbers to perform various operations.
 Count the recursion until we get 24.
 I think it is a simple way to achieve 24 points.
+I guese the algorithm complexity is {[(n-1)!]^2}*[3^(n-1)]*n
