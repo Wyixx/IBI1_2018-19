@@ -60,8 +60,8 @@ y=xml_to_cps()
 
 #------------------------------------------------------------
 os.chdir('C:/Users/Wyxx/Documents/git/IBI1_2018-19/Practical13')
-os.system('C:/Users/Wyxx/Documents/git/IBI1_2018-19/Practical13/CopasiSE predator-prey.cps')
-
+os.system('CopasiSE.exe predator-prey.cps')
+# run a Copasi ﬁle from within Python 
 
 
 import re
@@ -111,10 +111,10 @@ parameter=term.getElementsByTagName('parameter')
 
 #edit the parameters
 #The exact numbers can vary from 0 to 1
-k_predator_dies=0.5
-k_predator_breeds=0.6
-k_prey_dies=0.5
-k_prey_breeds=0.6
+k_predator_dies=0.4
+k_predator_breeds=0.02
+k_prey_dies=0.02
+k_prey_breeds=0.1
 
 for t in parameter:
     if t.getAttribute('name')=='k_predator_dies':                   
@@ -139,7 +139,16 @@ yfile.close()
 
 
 #--------------running many simulations--------------------------------
+#use a loop to change the four parameters and run simulation several times
+#selecet parameters randomly  np.random.sample()
+#every time, plot the 'time course'&'limit cycle' figures and store them together with corresponding parameters in a file
 
+
+#use np.amax() to find the max number of predators during the simulation and print it out
+
+#determine whether prey dies out during the course of the simulation
+#use np.amin() to find the minimum number of prey
+#compare the minimum value to 0
 
 
 
